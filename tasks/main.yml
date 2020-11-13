@@ -1,4 +1,4 @@
 - name: Hanlde lock
   shell: |
-    apt-get remove unattended-upgrades
+    cp  /usr/share/unattended-upgrades/20auto-upgrades-disabled  /etc/apt/apt.conf.d/
   become: yes
