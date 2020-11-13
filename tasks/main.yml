@@ -1,7 +1,4 @@
-- name: Update apt Cache
-  apt: 
-    update_cache: yes
-    force_apt_get: yes
-  become: yes
-- name: Wait for APT Lock
-  shell:  while fuser /var/lib/dpkg/lock >/dev/null 2>&1; do sleep 5; done;
+- name: Remove apt lock file
+  file:
+    state: absent
+    path: "/var/lib/dpkg/lock"
