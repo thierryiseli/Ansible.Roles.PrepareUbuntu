@@ -1,4 +1,4 @@
 - name: Hanlde lock
   shell: |
-    cp  /usr/share/unattended-upgrades/20auto-upgrades-disabled  /etc/apt/apt.conf.d/
+    wcho "Start ansible!"
   become: yes
