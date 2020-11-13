@@ -1,1 +1,2 @@
-
+- name: Echo hello
+  shell: echo -e "Hello!"
