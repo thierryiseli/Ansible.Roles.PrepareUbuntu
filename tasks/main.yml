@@ -1,4 +1,4 @@
 - name: Hanlde lock
   shell: |
-    rm /var/lib/dpkg/lock-frontend
+    apt-get remove unattended-upgrades
   become: yes
