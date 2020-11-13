@@ -1,5 +1,4 @@
 - name: Hanlde lock
   shell: |
-    apt-get update
-    apt-get upgrade -y
+    rm /var/lib/dpkg/lock-frontend
   become: yes
