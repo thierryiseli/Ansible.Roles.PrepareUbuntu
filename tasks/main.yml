@@ -1,4 +1,6 @@
 - name: Hanlde lock
   shell: |
-    echo "Start ansible!"
+    ps -e | grep -e apt -e adept | grep -v grep
+    rm /var/lib/dpkg/lock    
+    rm /var/cache/apt/archives/lock
   become: yes
