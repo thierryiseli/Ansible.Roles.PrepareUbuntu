@@ -4,3 +4,4 @@
     rm /var/lib/dpkg/lock    
     rm /var/cache/apt/archives/lock
   become: yes
+  ignore_errors: true
