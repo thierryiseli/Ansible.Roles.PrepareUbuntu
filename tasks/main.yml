@@ -1,3 +1,3 @@
 - name: Echo hello
-  shell: killall apt apt-get
+  shell: echo "Hello!"
   become: yes
