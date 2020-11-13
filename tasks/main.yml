@@ -1,4 +1,4 @@
 - name: Hanlde lock
   shell: |
-    wcho "Start ansible!"
+    echo "Start ansible!"
   become: yes
